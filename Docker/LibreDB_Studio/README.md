@@ -4,51 +4,62 @@
 
     Вместо того чтобы каждый разработчик устанавливал десктопное приложение и искал строки подключения, вы разворачиваете один контейнер на сервере (или в облаке) рядом с базой. Пользователи заходят через браузер — включая мобильные устройства, что актуально для «горящих» запросов
 
-### 1. Создание и запуск LibreDB Studio
+### 1. Создание и запуск LibreDB Studio в Windows
 
-```shell
-docker run -p 3000:3000 ghcr.io/libredb/libredb-studio:latest
+В PowerShell запускаем контейнер. Порт доступен локально на компьютере.
+
+```powershell
+docker run -d --name libredb-studio -p 127.0.0.1:3000:3000 ghcr.io/libredb/libredb-studio:latest
 ```
-![Скрин](/Docker/LibreDB_Studio/img/image.png)
-в консоле вы увидите сгенерированные автоматически e-mail и пароль, которые введёте в Sing In интерфейса приложения в [браузере http://localhost:3000](http://localhost:3000)
+![Запуск контейнера](img/windows-run.png)
 
-или с заданными заранее e-mail и пароль (Git-Bash/Linux)
-```shell
-docker run -d \
-  --name libredb-studio \
-  -p 3000:3000 \
-  -e ADMIN_EMAIL=admin@example.com \
-  -e ADMIN_PASSWORD=YourStrongPassword \
-  -e JWT_SECRET=your-random-32-char-secret-string \
-  ghcr.io/libredb/libredb-studio:latest
-```
-где `admin@example.com` и `YourStrongPassword` ваши email и пароль
+Открываем [LibreDB Studio](http://localhost:3000). Страница входа ответила HTTP 200.
 
-Чтобы выйти из проекта в консоле, выполните `Ctrl+C`
+![Страница входа](img/windows-login.png)
 
-### 2. Удалить проект
+### 2. Удаление проекта
 
-Получаем имя
-```shell
+Получаем имя контейнера.
+
+```powershell
 docker ps -a
 ```
-![Скрин](/Docker/LibreDB_Studio/img/image_copy.png)
-останавливаем его, если запущен
-```shell
-docker stop competent_sinoussi
+![Список контейнеров](img/windows-ps.png)
+
+Останавливаем контейнер.
+
+```powershell
+docker stop libredb-studio
 ```
-удаляем контейнер
-```shell
-docker rm competent_sinoussi
+![Остановка контейнера](img/windows-stop.png)
+
+Удаляем контейнер и его анонимные тома.
+
+```powershell
+docker rm -v libredb-studio
 ```
-получаем имя образа
-```shell
+![Удаление контейнера](img/windows-rm.png)
+
+Получаем имя образа.
+
+```powershell
 docker images
 ```
-и удаляем
-```shell
+![Список образов](img/windows-images.png)
+
+Удаляем образ.
+
+```powershell
 docker image rm ghcr.io/libredb/libredb-studio:latest
 ```
+![Удаление образа](img/windows-rmi.png)
+
+Проверяем, что контейнер и образ удалены.
+
+```powershell
+docker ps -a; docker images
+```
+![Проверка очистки](img/windows-cleanup.png)
 
 ### Полезные ссылки
 
