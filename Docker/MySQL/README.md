@@ -46,4 +46,3 @@ SELECT version();
 ```sql
 exit
 ```
-![Скрин](/Docker/MySQL/img/exit.png)

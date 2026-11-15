@@ -61,14 +61,11 @@ db.users.updateOne({ name: "Иван" }, { $set: { age: 31 } })
 ```shell
 db.users.deleteOne({ name: "Иван" })
 ```
-![Скрин](/Docker/MongoDB/img/delete.png)
 Посмотреть коллекции
 ```shell
 show collections
 ```
-![Скрин](/Docker/MongoDB/img/collections.png)
 Выйти
 ```shell
 exit
 ```
-![Скрин](/Docker/MongoDB/img/exit.png)

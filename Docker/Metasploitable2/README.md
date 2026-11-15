@@ -29,6 +29,5 @@ docker run --network none --name metasploitable2 -it tleemcjr/metasploitable2
 ```shell
 exit
 ```
-![Скрин](/Docker/Metasploitable2/img/exit.png)
 
 [Metasploitable2 на Docker hub](https://hub.docker.com/r/tleemcjr/metasploitable2#!)
