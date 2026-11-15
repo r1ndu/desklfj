@@ -10,6 +10,7 @@
 docker run -p 3000:3000 ghcr.io/libredb/libredb-studio:latest
 ```
 ![Скрин](/Docker/LibreDB_Studio/img/image.png)
+![Скрин](/Docker/LibreDB_Studio/img/windows-login.png)
 в консоле вы увидите сгенерированные автоматически e-mail и пароль, которые введёте в Sing In интерфейса приложения в [браузере http://localhost:3000](http://localhost:3000)
 
 или с заданными заранее e-mail и пароль (Git-Bash/Linux)
