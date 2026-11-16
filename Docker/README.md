@@ -1,0 +1,32 @@
+# Docker CLI
+
+(CLI - command line interface, командная строка)
+
+## Коллекция готовых Docker-образов из Docker Hub и других источников
+
+1. [Docket Hub](https://github.com/rurewa/imfua/blob/main/content/Docker/Docs/DockerHub.md)
+1. [Веб-сервер Nginx](./Nginx/README.md)
+1. [Welcome to Docker](./WelcomeToDocker/README.md)
+1. [Apache](./Apache/README.md)
+1. [Adminer (альтернатива phpMyAdmin)](https://github.com/rurewa/imfua/blob/main/content/Docker/ImageLibrary/Adminer.md)
+1. [Alt Linux в Docker](https://github.com/rurewa/imfua/blob/main/content/Docker/ImageLibrary/AltInDocker.md)
+1. [Статический сайт на Apache](https://github.com/rurewa/imfua/blob/main/content/Docker/ImageLibrary/Apache+StaticSite.md)
+1. [Metasploitable2 docker](./Metasploitable2/README.md)
+1. [PostgreSQL](./PostgreSQL/README.md)
+1. [База данных Redis](./Redis/README.md)
+1. [Ubuntu для тестирования команд](./Ubuntu/README.md)
+1. [Python для запуска скриптов](./Python/README.md)
+1. [Node.js для JavaScript](./Node.jsForJS/README.md)
+1. [MySQL база данных](./MySQL/README.md)
+1. [MongoDB (NoSQL)](./MongoDB/README.md)
+1. [Portainer](./Portainer/README.md)
+1. [HTTP-сервер для раздачи файлов](./HTTPserverFiles/README.md)
+1. [cAdvisor (мониторинг контейнеров)](./cAdvisor/README.md)
+1. [Тест скорости интернета Speedtest](./speedtest/README.md)
+1. [Файловый обменник](./file-server/README.md)
+1. [Jira](./Jira/README.md)
+1. [Pcb2gcode](./Pcb2gcode/README.md)
+1. [Alt Linux в Docker](https://github.com/rurewa/imfua/blob/main/content/Docker/ImageLibrary/AltInDocker.md)
+1. [Ollama и Open WebUI+Ollama](./Ollama/README.md)
+1. [LibreDB Studio](./LibreDB_Studio/README.md)
+1. [Скрипт мониторинга](./monitor/README.md)
