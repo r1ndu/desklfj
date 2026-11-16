@@ -35,5 +35,6 @@ docker run --rm --name imfua-pcb-lab -p 127.0.0.1:8081:5000 -d \
 ![Скрин](/Docker/Pcb2gcode/img/site.png)
 
 Придумайте простой пароль, например 123 и войдите в админ-панель проекта
+![Скрин](/Docker/Pcb2gcode/img/dashboard.png)
 
 [Docker-версия Pcb2gcode](https://hub.docker.com/r/ngargaud/insolante)`
