@@ -7,3 +7,4 @@
 - [Работа с GIT](/5/git.md)
 - [Новый пункт миню]()
 - [Статический проект на GutHub]
+- [Docker](/Docker/README.md)
