@@ -30,3 +30,4 @@
 1. [Ollama и Open WebUI+Ollama](./Ollama/README.md)
 1. [LibreDB Studio](./LibreDB_Studio/README.md)
 1. [Скрипт мониторинга](./monitor/README.md)
+1. [Прокси сервер Squid proxy](./Squid-proxy/README.md)
